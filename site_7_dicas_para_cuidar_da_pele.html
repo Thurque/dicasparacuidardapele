@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>7 DICAS PARA CUIDAR DA PELE — Transforme sua Rotina</title>
+  <meta name="description" content="Guia digital com 7 dicas práticas para cuidar da pele. Leia tudo e libere a oferta no final.">
+  <style>
+    :root{
+      --neon1:#00f5d4; /* turquesa */
+      --neon2:#ff006e; /* pink */
+      --neon3:#ffd166; /* amarelo */
+      --deep:#0b0b2a;  /* azul escuro */
+      --card:#ffffff;
+      --ink:#0b1020;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, Arial;
+      background:radial-gradient(1200px 500px at 10% -10%, rgba(255,0,110,.25), transparent),
+                 radial-gradient(900px 600px at 110% 10%, rgba(0,245,212,.25), transparent),
+                 linear-gradient(140deg, #0a0f3a, #120a2a 60%, #0a1022);
+      color:#eef2ff;
+    }
+    .container{max-width:1180px;margin:auto;padding:28px}
+
+    /* Top bar with timer */
+    .topbar{
+      position:sticky;top:0;z-index:10;
+      background:linear-gradient(90deg,var(--neon2),var(--neon1));
+      color:#081120;
+      box-shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    .topbar .inner{max-width:1180px;margin:auto;padding:12px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .pill{background:#081120;color:#fff;padding:6px 10px;border-radius:999px;font-weight:800}
+    .timer{font-size:20px;font-weight:900}
+
+    header{margin-top:24px}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:26px;align-items:stretch}
+    .hero-card{
+      background:linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:22px;padding:28px;box-shadow:0 30px 80px rgba(0,0,0,.45)
+    }
+    h1{font-size:44px;margin:0 0 10px;line-height:1.05}
+    .subtitle{color:#c7d2fe;font-size:18px}
+    .highlight{background:linear-gradient(90deg,var(--neon3),#fff);color:#081120;padding:4px 8px;border-radius:8px;font-weight:900}
+
+    .proofs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .proof{background:#0b102a;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px;text-align:center}
+    .proof strong{font-size:22px;color:var(--neon3)}
+
+    .media{
+      background:linear-gradient(135deg, var(--neon2), var(--neon1));
+      border-radius:22px;padding:26px;color:#081120;display:flex;flex-direction:column;justify-content:space-between
+    }
+
+    section{margin-top:38px}
+    .card{background:var(--card);color:var(--ink);border-radius:22px;padding:26px;box-shadow:0 25px 60px rgba(0,0,0,.35)}
+
+    .cols{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .list li{margin:10px 0}
+
+    .steps{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;margin-top:14px}
+    .step{background:#0b102a;border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:12px;text-align:center}
+
+    .testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .t-card{background:#11163a;border-radius:16px;padding:16px;color:#e5e7eb}
+    .stars{color:#00f5d4;font-weight:900}
+
+    .faq{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .q{background:#0b102a;border-radius:14px;padding:14px;border:1px solid rgba(255,255,255,.1)}
+
+    .divider{height:2px;background:linear-gradient(90deg,transparent,var(--neon1),var(--neon2),transparent);margin:36px 0}
+
+    /* Final offer */
+    .offer{background:linear-gradient(120deg,var(--neon2),var(--neon1));color:#081120;border-radius:26px;padding:32px;box-shadow:0 30px 90px rgba(0,0,0,.55)}
+    .price{font-size:52px;font-weight:1000}
+    .btn{
+      display:inline-block;margin-top:14px;
+      background:#081120;color:#fff;text-decoration:none;
+      padding:16px 28px;border-radius:14px;font-weight:1000;font-size:18px;
+      box-shadow:0 14px 30px rgba(0,0,0,.35)
+    }
+
+    footer{text-align:center;margin:30px 0;color:#c7d2fe}
+
+    @media(max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .proofs,.steps,.testimonials,.faq,.cols{grid-template-columns:1fr}
+      h1{font-size:36px}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="inner">
+      <div class="pill">OFERTA RELÂMPAGO</div>
+      <div>Tempo restante para liberar o desconto:</div>
+      <div id="timer" class="timer">20:00</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <header class="hero">
+      <div class="hero-card">
+        <h1>Cuide da sua pele com 7 passos simples — sem complicação</h1>
+        <p class="subtitle">Guia digital direto ao ponto para criar uma rotina que você consegue manter todos os dias.</p>
+        <div class="proofs">
+          <div class="proof"><strong>+12k</strong><div>Leitores</div></div>
+          <div class="proof"><strong>4.9★</strong><div>Avaliação média</div></div>
+          <div class="proof"><strong>7 dias</strong><div>Garantia</div></div>
+        </div>
+      </div>
+      <div class="media">
+        <h2>O que muda quando você aplica?</h2>
+        <ul>
+          <li>Pele mais limpa e com viço</li>
+          <li>Menos oleosidade e irritação</li>
+          <li>Rotina clara e rápida</li>
+          <li>Sem gastar com produtos caros</li>
+        </ul>
+        <strong>Leia tudo e libere a oferta no final ⬇️</strong>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>Para quem é este guia?</h2>
+      <p>Este material foi criado para pessoas comuns, que querem cuidar melhor da pele, mas se sentem perdidas com tanta informação diferente na internet. Aqui você encontra um caminho simples, organizado e fácil de seguir.</p>
+      <div class="cols">
+        <ul class="list">
+          <li>Iniciantes que nunca tiveram uma rotina de cuidados</li>
+          <li>Quem já tentou vários métodos e não teve resultado</li>
+          <li>Pessoas com pele oleosa, seca, mista ou sensível</li>
+        </ul>
+        <ul class="list">
+          <li>Quem tem pouco tempo no dia a dia</li>
+          <li>Quem quer gastar pouco com produtos</li>
+          <li>Quem busca resultados reais e consistentes</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>O que você vai aprender no guia</h2>
+      <p>O guia <strong>7 DICAS PARA CUIDAR DA PELE</strong> ensina como montar uma rotina básica e eficiente, explicando o porquê de cada passo para que você realmente entenda o que está fazendo.</p>
+      <ul class="list">
+        <li>Como lavar o rosto corretamente (sem ressecar)</li>
+        <li>Quando e como hidratar a pele do jeito certo</li>
+        <li>A importância do protetor solar todos os dias</li>
+        <li>Como esfoliar sem causar irritações</li>
+        <li>Hábitos diários que influenciam diretamente a pele</li>
+        <li>Erros comuns que prejudicam sua pele sem você perceber</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>As 7 dicas (visão geral)</h2>
+      <div class="steps">
+        <div class="step">Limpeza</div>
+        <div class="step">Hidratação</div>
+        <div class="step">Protetor</div>
+        <div class="step">Esfoliação</div>
+        <div class="step">Rotina AM/PM</div>
+        <div class="step">Hábitos</div>
+        <div class="step">Prevenção</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Resultados reais de pessoas comuns</h2>
+      <p>Esses resultados não vieram da noite para o dia, mas sim da aplicação consistente de hábitos simples. Pessoas que nunca tinham cuidado da pele começaram a ver mudanças claras em pouco tempo.</p>
+      <div class="testimonials">
+        <div class="t-card"><div class="stars">★★★★★</div>“Minha pele era muito oleosa e cheia de espinhas. Em menos de 30 dias, a diferença foi absurda.”<br><strong>— Ana, 27 anos</strong></div>
+        <div class="t-card"><div class="stars">★★★★★</div>“Sempre achei que cuidar da pele era complicado. Hoje faço tudo em 5 minutos.”<br><strong>— Lucas, 34 anos</strong></div>
+        <div class="t-card"><div class="stars">★★★★★</div>“Nunca consegui manter constância antes. Agora virou hábito.”<br><strong>— Mariana, 22 anos</strong></div>
+        <div class="t-card"><div class="stars">★★★★★</div>“Economizei dinheiro parando de comprar produtos errados.”<br><strong>— Rafael, 31 anos</strong></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Dúvidas comuns</h2>
+      <div class="faq">
+        <div class="q"><strong>Esse guia substitui um dermatologista?</strong><br>Não. O material é educativo e ajuda a criar bons hábitos, mas não substitui avaliações médicas.</div>
+        <div class="q"><strong>Funciona para adolescentes?</strong><br>Sim. É recomendado a partir dos 14 anos, com foco em cuidados básicos e seguros.</div>
+        <div class="q"><strong>Preciso comprar produtos caros?</strong><br>Não. O guia ensina alternativas acessíveis e mostra que consistência é mais importante que preço.</div>
+        <div class="q"><strong>Em quanto tempo vejo resultados?</strong><br>Muitas pessoas relatam melhora na textura e oleosidade em poucas semanas.</div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="card">
+      <h2>Por que este guia funciona?</h2>
+      <p>Porque ele não tenta te impressionar com termos técnicos ou promessas milagrosas. Ele mostra o básico bem feito — o que realmente traz resultado.</p>
+      <ul class="list">
+        <li>Rotina clara: manhã e noite, sem confusão</li>
+        <li>Explicações simples para você entender o porquê de cada passo</li>
+        <li>Evita erros comuns que pioram a pele</li>
+        <li>Funciona com produtos acessíveis</li>
+        <li>Pode ser aplicado em qualquer idade</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Imagine sua pele daqui a algumas semanas</h2>
+      <p>Agora imagine acordar, olhar no espelho e ver uma pele mais limpa, menos oleosa, com aparência saudável — sabendo exatamente o que fazer todos os dias.</p>
+      <p>Esse guia foi feito para quem cansou de tentar de tudo e não quer perder mais tempo nem dinheiro.</p>
+    </section>
+
+    <!-- FINAL: preço somente aqui -->
+    <section class="offer" id="oferta">
+      <h2>Oferta liberada por tempo limitado</h2>
+      <p>Leu tudo? Então aproveite antes que o temporizador zere.</p>
+      <div class="price">R$ 19,90</div>
+      
+      <a class="btn" href="#" onclick="alert('Troque este botão pelo link de pagamento (Pix/Hotmart/Kiwify).')">QUERO AGORA</a>
+      <p><strong>Garantia de 7 dias</strong> • Acesso imediato</p>
+    </section>
+
+    <footer>
+      © 2025 • 7 DICAS PARA CUIDAR DA PELE
+    </footer>
+  </div>
+
+  <script>
+    // Temporizador de 20 minutos (inicia ao carregar a página)
+    let remaining = 20 * 60; // 20 minutos em segundos
+    const el = document.getElementById('timer');
+    const tick = () => {
+      const m = Math.floor(remaining / 60).toString().padStart(2,'0');
+      const s = (remaining % 60).toString().padStart(2,'0');
+      el.textContent = `${m}:${s}`;
+      if (remaining > 0) remaining--;
+      else { el.textContent = '00:00'; }
+    };
+    setInterval(tick, 1000); tick();
+  </script>
+</body>
+</html>
